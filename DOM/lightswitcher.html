@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Switcher</title>
+</head>
+<body>
+    <h1 id="heading">light switcher</h1>
+    <p>This text will change color with theme</p>
+    <button onclick="lightmode()">Light Mode</button>
+    <button onclick="darkmode()">Dark Mode</button>
+    <script>
+        function darkmode(){
+            document.body.style.backgroundColor="black"
+            document.body.style.color="white";
+            document.getElementById("heading").style.color="cyan"
+        
+        };
+        function lightmode(){
+            document.body.style.backgroundColor="white"
+            document.body.style.color="black";
+            document.getElementById("heading").style.color="red"
+        
+        };
+
+    </script>
+</body>
+</html>

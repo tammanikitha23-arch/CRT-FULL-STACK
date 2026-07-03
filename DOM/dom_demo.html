@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Example</title>
+</head>
+<body>
+    <!--P>
+        DOM---Documnet object model
+        programming interface that represents an html document as a tree of objects
+        DOM allows javascript to:
+        1.read the html elements
+        2.modify the html elements
+        3.add new elements
+        4.css - styles changing
+        5.Handle the user interactions
+    </P>-->
+    <h1 id="title">HEllo Students</h1>
+    <p class="bio">Learning JAVASCRIPT</p>
+    <h2>Heading2</h2>
+    <p>one</p>
+    <p>two</p>
+    <p>three</p>
+    <h3 id="course">HTML content</h3>
+    <button onclick="changestyle()">Click</button>
+    
+    <!--
+    Browser will convert HTML into DOM
+    DOCUMENT
+    |
+    |
+    | ---HTML
+    | ---HEAD
+          |
+          ---title
+    |
+    | --Body
+          |
+          ---h1
+          --p
+          --p
+          
+        Every HTML elements becomes an object:
+        HTML pages will be static -- without DOM
+        with DOM:
+        JS can:
+        change text
+        change color
+        add buttons
+        create animations
+        validate the forms
+        build the interactive website
+
+        select the elements
+                |
+        DOM manupulation
+                |
+        event handling
+
+    DOM Methods:
+    1.document.getElementById();
+            returns a single element using ID
+    2.document.queryselector();
+    3.document.querySelectorAll();
+
+    -->
+
+
+    <script src="dom.js"></script>
+</body>
+</html>

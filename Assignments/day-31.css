@@ -1,0 +1,337 @@
+/* student detalis */
+:root{
+    --primary:coral;
+    --secondary:#00aaff;
+    --text:black;
+    --bg:white;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+}
+
+/* Hero Section */
+.hero{
+    text-align:center;
+    color:white;
+    padding:80px 20px;
+
+    background-color:var(--primary);
+    background-image:url(../webdevelopment.jpg);
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+/* Navigation */
+nav{
+    background:var(--primary);
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+    transition:0.4s;
+}
+
+nav a:hover{
+    color:blue;
+    font-size:18px;
+}
+
+/* Sections */
+section{
+    padding:20px;
+    margin:20px;
+    background:white;
+    border-radius:8px;
+}
+
+h2{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+/* Skills Section */
+.skill{
+    display:inline-block;
+    background:var(--secondary);
+    color:white;
+    padding:10px 20px;
+    margin:10px;
+    border-radius:5px;
+    transition:0.5s;
+}
+
+.skill:hover{
+    transform:scale(1.1) rotate(5deg);
+}
+
+/* Projects Section */
+.project{
+    background:black;
+    border-left:5px solid var(--primary);
+    padding:15px;
+    margin:15px 0;
+    transition:0.5s;
+}
+
+.project:hover{
+    transform:translateY(-10px);
+}
+
+/* Animations */
+
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}
+.fade{
+    animation:fadeIn 2s;
+}
+
+.slide{
+    animation:slideIn 2s;
+}
+
+.bounce{
+    animation:bounce 2s infinite;
+}
+
+/* Footer */
+footer{
+    background:var(--primary);
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* Mobile */
+@media(max-width:600px){
+    nav a{
+        display:block;
+        margin:10px;
+    }
+}
+
+/* hospital apointment */
+:root{
+    --hospital-color:blue;
+    --accent-color:#00b4d8;
+    --text-color:#333;
+    --border-color:#bde0fe;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    color:var(--text-color);
+    background:#f8fbff;
+}
+
+/* Header */
+header{
+    text-align:center;
+    color:white;
+    padding:80px 20px;
+
+    background-image:url(../hospital.jpeg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    font-size:20px;
+}
+
+/* Navigation */
+nav{
+    background:var(--hospital-color);
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    padding:8px 15px;
+    border:2px solid transparent;
+    transition:all 0.4s ease;
+}
+
+nav a:hover{
+    background:white;
+    color:var(--hospital-color);
+    border-color:white;
+}
+
+/* Sections */
+section{
+    padding:20px;
+    margin:20px;
+}
+
+h2{
+    color:var(--hospital-color);
+    margin-bottom:15px;
+}
+
+/* Doctor Cards */
+.doctor-card{
+    background:white;
+    border:2px solid var(--border-color);
+    padding:20px;
+    margin:15px 0;
+    border-radius:10px;
+    transition:0.4s ease;
+}
+
+.doctor-card:hover{
+    transform:scale(1.05) translateY(-10px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Appointment Form Animation */
+.appointment-form{
+    animation:slideFade 1.5s ease;
+}
+
+form{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    border:1px solid var(--border-color);
+}
+
+input,
+select{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid var(--border-color);
+    border-radius:5px;
+}
+
+/* Button Effects */
+button{
+    background:var(--hospital-color);
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+
+    transition:all 0.4s ease;
+}
+
+button:hover{
+    background:var(--accent-color);
+    transform:scale(1.1);
+}
+
+/* Emergency Section */
+.emergency{
+    background:olivedrab;
+    color:white;
+    text-align:center;
+    font-size:24px;
+    font-weight:bold;
+    border-radius:10px;
+
+    animation:pulse 1s infinite;
+}
+
+/* Animations */
+@keyframes slideFade{
+    from{
+        opacity:0;
+        transform:translateX(-100px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+@keyframes pulse{
+    0%{
+        transform:scale(1);
+        opacity:1;
+    }
+    50%{
+        transform:scale(1.05);
+        opacity:0.7;
+    }
+    100%{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+/* Footer */
+footer{
+    background:var(--hospital-color);
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    nav a{
+        display:block;
+        margin:10px;
+    }
+
+    header h1{
+        font-size:28px;
+    }
+
+    .doctor-card{
+        margin:10px 0;
+    }
+}
+
+/* Tablet */
+@media (min-width:768px) and (max-width:1024px){
+
+    body{
+        font-size:18px;
+    }
+}
+
+/* Desktop */
+@media (min-width:1025px){
+
+    body{
+        font-size:20px;
+    }
+}

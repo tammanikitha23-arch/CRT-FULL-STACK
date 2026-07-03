@@ -1,0 +1,24 @@
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+    text-align: center;
+}
+button{
+    background-color:blue;
+    color:aliceblue;
+    transition:background 0.5s ease-in-out;
+}
+button:hover{
+    background:red;
+}
+a:hover{
+    color:darkgray;
+}
+
+p{
+    text-align: center;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+}

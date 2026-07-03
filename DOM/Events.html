@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Explanation</title>
+</head>
+<body>
+
+    <!--
+    AN event is an action performed by the user
+    or browser
+    Examples:
+    1.Clicking a button
+    2.Typing in a textbox
+    3.Submitting form
+    4.Moving the mouse
+    5.Pressing a key
+    Js listens to this events and performs
+    //common events
+    1.clilck-> user clicks an element
+    2.submit->form is submited
+    3.change->input value changes
+    4.keyup ->key is released
+    5.keydown->key is pressed
+    6.mouseover->mouse enters the element
+    7.mouseout->mouse leaves element
+
+    -->
+    <h1>Events Explanation </h1>
+    <!--Inline event-->
+    <button onclick="showMessage()"
+    >click me </button>
+    <form id="loginForm">
+        <input type="text" placeholder="Username"/>
+        <button>Submit</button>
+    </form><br><br>
+    <he>Change Event Example</he>
+    <select id="course">
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JS</option>
+    </select><br><br>
+    <h3>Color picker Example</h3>
+    <input type="color" id="colorPicker">
+    <br><br>
+    <h3>Keyup Example</h3>
+    <input 
+        type="text"
+        id="username"
+    >
+    <p id="count">0</p>
+
+    <h2>Light Bulb Example</h2>
+
+    <img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Bulb">
+
+    <br><br>
+
+    <button onclick="turnOn()">Switch ON</button>
+    <button onclick="turnOff()">Switch OFF</button>
+
+     <script src="events.js"></script>
+</body>
+</html>

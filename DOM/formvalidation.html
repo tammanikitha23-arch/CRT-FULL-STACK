@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    
+    <form id="loginForm">
+        <input
+            type="text"
+            placeholder="Enter Username"
+            id="username"
+        /><br><br>
+        <input
+            type="password"
+            placeholder="Enter the password"
+            id="password"
+        /><br><br>
+        <input
+            type="email"
+            placeholder="Enter the mail"
+            id="email"/><br><br>
+        <input
+            type="age"
+            placeholder="enter the age"
+            id="age"
+        />
+        <button>
+            Login
+        </button>
+
+
+
+    </form>
+    <script>
+        //select the elements
+        let form=document.getElementById("loginForm")
+        form.addEventListener("submit",function(event){
+            event.preventDefault()
+            let username=document.getElementById("username").value
+            let password=document.getElementById("password").value
+            //email validation
+            let email=document.getElementById("email").value;
+            let age=document.getElementById("age").value;
+            if(!email.includes("@")){
+                alert("invalid mail")
+            }
+            //password validation
+            if (username==""||password==""){
+                alert("fill all the feilds")
+                return;
+            };
+            if (password.length<8){
+                alert("password should be 8 charectors")
+                return;
+            };
+            //number validation
+            if(age<18){
+                alert("age should be 18 or above")
+                return;
+            };
+            
+            alert("login successful")
+            console.log(username)
+            console.log(password)
+
+        })
+    </script>
+</body>
+</html>

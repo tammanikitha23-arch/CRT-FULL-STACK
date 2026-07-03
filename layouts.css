@@ -1,0 +1,164 @@
+div{
+    /*starts in a new line & Occupies */
+   display:block; 
+}
+span{
+    display:inline;
+}
+span{
+    display:inline-block;
+    width:200px;
+    height:100px;
+    background:red;
+}
+/* div{ */
+    /*display:none;*/
+    /*visibility:hidden;*/
+    /* overflow: hidden;/*Hides the excess content*/
+    /* overflow:auto;  */
+/* } 
+/*position Properties*/
+div{
+    /*position:static;*/
+    position:relative;
+    top:0px;
+    left:20px;
+}
+.parent{
+    position: relative;
+}
+.child{
+    position: absolute;
+    top:0;
+    right:0
+}
+/*div{
+    position: fixed;
+    bottom:20px;
+    right:20px;
+}*/
+/*h1{
+    position:sticky;
+    top:0;
+}*/
+.container{
+    display:flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.item{
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color:powderblue;
+    flex-wrap: wrap;
+}
+/*wrap 
+1 2 3 4 5 6 7 8
+wrap:
+1 2 3 4
+5 6 7 8*/
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+u1{
+    display: flex;
+    gap:20px;
+    list-style: none;
+}
+/*Flexbox: row or column
+css grid: rows & columns*/
+.container1{
+    display:grid;
+    /*create the columns*/
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* grid-template-rows: 100px 100px 100px; */
+    /* grid-template-columns:
+    repeat(auto-fit,minmax(200px,1fr)); */
+    gap:20px;
+    grid-template-areas: "header header"
+    "sidebar content"
+    "footer footer";
+}
+.item1{
+    width:100px;
+    height: 100px;
+    /* gap:20px; */
+    background:brown;
+}
+body{
+    background-color:white;
+    /* background-image: url(cloud.jpeg);  */
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-x;
+}
+h1{
+    text-shadow: 5px 2px 10px gray;
+}
+button:hover{
+    background: blue;
+    color:white;
+}
+input{
+    padding: 10px;
+    border:2px solid gray;
+    border-radius: 5px;
+    outline:none;
+}
+input:focus{
+    border:2px solid blue
+}
+button:active{
+    transform:scale(0.95);
+}
+.box{
+    width:100px;
+    height: 100px;
+    background: chocolate;
+}
+.box{
+    /*transform:translate(45deg)*/
+    transform:rotate(45deg);
+    /*resize my element*/
+    transform:scale(1.5);
+}
+.card{
+    width:200px;
+    height:200px;
+    background-color:crimson;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    /* border-radius:50%; */
+}
+.card:hover{
+    transform:scale(1.1);
+}
+.card{
+    transform:skew(20deg);
+}
+.card{
+    transform:translate(20deg)
+    scale(1.1)
+    rotate(5deg);
+}
+.newbtn{
+    background:blue;
+    transition:2s;
+}
+.newbtn:hover{
+    background:red;
+    transition-duration:0.5s;
+    transition-timing-function: ease-in-out;
+}

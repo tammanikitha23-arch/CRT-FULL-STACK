@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <style>
+        h1{
+            color:rgba(255,0,0,5);
+            /*HSL-Hue Sturation Lightness*/
+            color:hsl(18,32%,38%)
+        }
+        p{
+            /*Units:px %,*/
+            font-size: 40px;
+
+        }
+        .parent{
+            width:400px;
+
+        }
+        .child{
+            width:50%;
+        }
+        /*em---relative to parent size*/
+        .parent{
+            font-size:20px;
+        }
+        .child{
+            font-size: 2em;
+            /*2*parent size(20)=40px*/
+        }
+        /*rem--> Relative to route element */
+        html{
+            font-size:16px;
+        }
+        h1{
+            font-size:2rem;
+            /* 2*html(rem)=32px*/
+        }
+        /*vh -->Viewport Height*/
+        .hero{
+            height:100vh;
+            /*100 per screen height*/
+        }
+        /*vw --> viewport width*/
+        .banner{
+            width:100vw;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to collage</h1>
+    <p>come reguraly</p>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>

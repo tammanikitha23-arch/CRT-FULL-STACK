@@ -1,0 +1,47 @@
+h1{
+    color:aqua;
+    font-size:italic;
+
+}
+/*class selection*/
+.title{
+    color:aqua;
+}
+/*Id selector*/
+#main hedding{
+    color:coral;
+}
+/*universal selector*/
+*{
+    font-family: Arial,Helvetica,sans-serif
+}
+/*Group selector*/
+h1,p,button {
+    color:azure;
+}
+/*Desendent selector*/
+div li{
+    color:pink;
+}
+/*child selector*/
+div > li{
+    color:chartreuse;
+}
+/*Attribute selector*/
+input[type="text"]{
+    background-color:yellow;
+}
+input[type="password"]{
+    background-color:azure;
+}
+/*Colors*/
+h1{
+    /*naming colors*/
+    /*color:red;*/
+    /*Hexadecimal values:#RRGGBB*/
+    /*color:#0000ff*/
+    /*RGB->0--255*/
+    /*color:rgb(128,85,66)*/
+    /*a-Transperency*/
+    color:rgba(255,0,0,5)
+}

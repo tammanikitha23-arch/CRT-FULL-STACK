@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form>
+        <fieldset>
+            <legend>Basic Information</legend>
+        
+        <label for="name">Name</label>
+        <input
+        type="text"
+        id="name"/><br>
+        <label>Email</label>
+        <input 
+        type="email"
+        id="email"><br>
+        <label for="Date">DOB</label>
+        <input type="date"><br>
+        <label>Gender</label>
+        <input name="Gender" type="radio"/>Male
+        <input name="Gender" type="radio"/>Female
+        <input name="Gender" type="radio"/>Others
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Education Information</legend>
+        <label>Branch</label>
+        <select>
+            <option>CSE</option>
+            <option>DS</option>
+            <option>AI</option>
+            <option>CS</option>
+            <options>ECE</options>
+        </select><br>
+        <label>Bio</label>
+        <textarea id="bio"
+        placeholder="Enter something Interesting"
+        >
+        </textarea><br><br>
+        <label>Resume:</label>
+        <input type="file"/><br>
+        </fieldset>
+        
+    </form>
+    <input type="checkbox"/>
+    <label>I accept this info is correct as per my knowledge</label><br>
+    <button type="submit">Submit</button>
+
+</body>
+</html>
